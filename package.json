@@ -1,0 +1,16 @@
+{
+    "name": "yarn-workspaces",
+    "version": "1.0.0",
+    "description": "Yarn workspaces",
+    "main": "index.js",
+    "author": "Piotr Wyrobek <pitrew@gmail.com>",
+    "license": "MIT",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "build": "yarn workspace @pw/components run build",
+        "start": "yarn workspace @pw/server run start"
+    }
+}
